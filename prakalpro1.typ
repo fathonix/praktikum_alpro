@@ -3,6 +3,9 @@
 // Contents are under proprietary license.
 
 // Initial page setup
+#import "@preview/codly:1.0.0": *
+#show: codly-init.with()
+
 // TODO: Remove unused space under header
 #let def-margin = 2.54cm
 #let border-color = rgb("#1eaaf1")
@@ -69,29 +72,11 @@
 )
 
 // Code block formatting
-// TODO: Fix rendering when lines overflow
-// TODO: Fix rendering when line number digits add up
-#show raw.where(block: true): code => {
-  set par(justify: false)
-  set text(
-    size: 8pt,
-    weight: "semibold",
-  )
-  block(
-    width: 100%,
-    fill: luma(240),
-    inset: 10pt,
-    radius: 4pt,
-    {
-      show raw.line: line => {
-        text(fill: gray)[#line.number]
-        h(1em)
-        line.body
-      }
-      code
-    }
-  )
-}
+#codly(
+  display-icon: false,
+  display-name: false,
+  zebra-fill: none,
+)
 
 // Text starts below
 
