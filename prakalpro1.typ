@@ -1,3 +1,7 @@
+// Laporan Praktikum Algoritme Pemrograman ITK
+// Template and build script are licensed under MIT.
+// Contents are under proprietary license.
+
 // Initial page setup
 #set page(
   paper: "a4",
