@@ -66,7 +66,6 @@
 #set enum(
   numbering: (it => strong[#it.]),
   indent: 0.64cm,
-  spacing: 10pt,
 )
 
 // Code block formatting
@@ -151,9 +150,19 @@ print(fahrenheit)
 == Penghitung Gaji Pegawai
 
 ```py
+upah = int(input("Masukkan upah per jam: "))
+jam_kerja = 8
+hari_kerja = int(input("Masukkan jumlah hari kerja dalam sepekan: "))
+
+upah_pekanan = upah * jam_kerja * hari_kerja
+
+print("Total upah pekanan yang diterima:", upah_pekanan)
 ```
 
 === Screenshot
+
+#image("img/fig3.png")
+#image("img/fig4.png")
 
 === Pembahasan
 
