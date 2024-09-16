@@ -7,21 +7,18 @@ DOCNAME ?= prakalpro1
 COVFILE ?= frontcover.pdf
 OUTFILE ?= Praktikum\ Algoritme\ Pemrograman\ 1.pdf
 
-all: dist/$(OUTFILE)
+all: $(OUTFILE)
 
-dist:
-	mkdir -p dist
+dev: $(DOCNAME).typ
+	$(TYPST) watch $^ $(DOCNAME).pdf
 
-dev: $(DOCNAME).typ | dist
-	$(TYPST) watch $^ dist/$(DOCNAME).pdf
-
-dist/$(DOCNAME).pdf: $(DOCNAME).typ | dist
+$(DOCNAME).pdf: $(DOCNAME).typ
 	$(TYPST) compile $^ $@
 
-dist/$(OUTFILE): $(COVFILE) dist/$(DOCNAME).pdf
+$(OUTFILE): $(COVFILE) $(DOCNAME).pdf
 	$(GS) -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile="$@" $^
 
-clean: dist
-	rm -rf dist
+clean: $(DOCNAME).pdf
+	rm -f $(DOCNAME).pdf
 
 .PHONY: all dev clean
