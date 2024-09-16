@@ -12,6 +12,9 @@ all: dist/$(OUTFILE)
 dist:
 	mkdir -p dist
 
+dev: $(DOCNAME).typ | dist
+	$(TYPST) watch $^ dist/$(DOCNAME).pdf
+
 dist/$(DOCNAME).pdf: $(DOCNAME).typ | dist
 	$(TYPST) compile $^ $@
 
@@ -21,4 +24,4 @@ dist/$(OUTFILE): $(COVFILE) dist/$(DOCNAME).pdf
 clean: dist
 	rm -rf dist
 
-.PHONY: all clean
+.PHONY: all dev clean
