@@ -100,13 +100,21 @@
 
 + *Variabel*
 
-  Variabel adalah penamaan pada data yang akan disimpan pada komputer. Variabel juga dapat didefinisikan sebagai tempat menyimpan data yang bersifat sementara. Variabel dapat diubah atau dimanipulasi selama program dijalankan. Variabel dapat membuat struktur kode lebih ringkas dan efisien. Pemberian nama pada variabel bisa dimulai dengan huruf dan tidak diawali dengan angka maupun spasi kosong.
+  Variabel adalah penamaan pada data yang akan disimpan pada
+  komputer. Variabel juga dapat didefinisikan sebagai tempat
+  menyimpan data yang bersifat sementara. Variabel dapat diubah
+  atau dimanipulasi selama program dijalankan. Variabel dapat
+  membuat struktur kode lebih ringkas dan efisien.
+  Pemberian nama pada variabel bisa dimulai dengan huruf dan tidak
+  diawali dengan angka maupun spasi kosong.
 
 + *I/O Konsol*
 
 + *Operasi Aritmatika*
 
-  Operasi aritmatika digunakan dalam proses perhitungan matematis seperti penjumlahan, pengurangan, perkalian, pembagian dan lainnya.
+  Operasi aritmatika digunakan dalam proses perhitungan matematis
+  seperti penjumlahan, pengurangan, perkalian, pembagian dan
+  lainnya.
 
 + *Konversi Tipe Data*
 
@@ -114,7 +122,8 @@
 
 + *Eksekusi Kondisional*
 
-  Eksekusi kondisional adalah suatu program yang dijalankan untuk membantu pengambilan suatu keputusan pada kondisi tertentu.
+  Eksekusi kondisional adalah suatu program yang dijalankan untuk
+  membantu pengambilan suatu keputusan pada kondisi tertentu.
 
 + *Eksekusi Kondisional Bersarang*
 
@@ -252,10 +261,39 @@ if kodon == "UGG":
 
 = Kesimpulan
 
-Setelah melakukan praktikum mengenai Variabel, Konsol I/O, Konversi Tipe Data, Operasi Aritmatika, dan Eksekusi Kondisional, dapat disimpulkan bahwa variable berfungsi sebagai tempat penyimpanan sementara dari nilai atau data. Variabel dideklarasikan dengan nama dan tipe data tertentu seperti integer, float, string, dan boolean. Didalam bahasa pemrograman, penamaan variabel harus mengikuti aturan penamaan, seperti tidak dimulai dengan angka dan tidak menggunakan kata kunci yang sudah didefinisikan oleh bahasa. Didalam input/output, Input mengacu pada data yang dimasukkan oleh pengguna, biasanya melalui konsol, sementara output adalah hasil yang ditampilkan oleh program. Pada bahasa Python, fungsi `input()` digunakan untuk menerima input dari pengguna, sementara `print()` digunakan untuk menampilkan output. Tipe data adalah kategori nilai yang dapat disimpan oleh variabel dalam pemrograman. Tipe data yang umum digunakan meliputi String, yang menyimpan teks atau karakter, Integer untuk bilangan bulat, Boolean untuk nilai logika yang hanya bisa bernilai `True` atau `False`, dan Float untuk bilangan desimal.
+Setelah melakukan praktikum mengenai Variabel, Konsol I/O,
+Konversi Tipe Data, Operasi Aritmatika, dan Eksekusi Kondisional,
+dapat disimpulkan bahwa variable berfungsi sebagai tempat
+penyimpanan sementara dari nilai atau data. Variabel dideklarasikan
+dengan nama dan tipe data tertentu seperti integer, float, string,
+dan boolean. Didalam bahasa pemrograman, penamaan variabel harus
+mengikuti aturan penamaan, seperti tidak dimulai dengan angka dan
+tidak menggunakan kata kunci yang sudah didefinisikan oleh bahasa.
+Didalam input/output, Input mengacu pada data yang dimasukkan oleh
+pengguna, biasanya melalui konsol, sementara output adalah hasil
+yang ditampilkan oleh program. Pada bahasa Python, fungsi `input()`
+digunakan untuk menerima input dari pengguna, sementara `print()`
+digunakan untuk menampilkan output. Tipe data adalah kategori nilai
+yang dapat disimpan oleh variabel dalam pemrograman. Tipe data yang
+umum digunakan meliputi String, yang menyimpan teks atau karakter,
+Integer untuk bilangan bulat, Boolean untuk nilai logika yang hanya
+bisa bernilai `True` atau `False`, dan Float untuk bilangan desimal.
 
-Operasi aritmatika juga bagian penting dalam algoritma pemrograman yang digunakan dalam proses perhitungan matematis seperti penjumlahan, pengurangan, perkalian, pembagian dan lainnya. Dan yang terakhir ada eksekusi kondisional yang merupakan konsep dalam pemrograman yang memungkinkan suatu blok kode hanya dijalankan jika syarat tertentu terpenuhi. Langkah ini dilakukan dengan menggunakan pernyataan seperti if-else, yang memeriksa kondisi. Jika kondisi terpenuhi (`True`) satu blok kode akan dijalankan, jika tidak (`False`) blok kode alternatif akan dijalankan. Fitur ini memungkinkan program merespons kondisi yang berbeda dan membuat keputusan yang dinamis.
+Operasi aritmatika juga bagian penting dalam algoritma pemrograman
+yang digunakan dalam proses perhitungan matematis seperti
+penjumlahan, pengurangan, perkalian, pembagian dan lainnya. Dan
+yang terakhir ada eksekusi kondisional yang merupakan konsep dalam
+pemrograman yang memungkinkan suatu blok kode hanya dijalankan jika
+syarat tertentu terpenuhi. Langkah ini dilakukan dengan menggunakan
+pernyataan seperti if-else, yang memeriksa kondisi. Jika kondisi
+terpenuhi (`True`) satu blok kode akan dijalankan, jika tidak
+(`False`) blok kode alternatif akan dijalankan. Fitur ini
+memungkinkan program merespons kondisi yang berbeda dan membuat
+keputusan yang dinamis.
 
 = Saran
 
-Penjelasan materi dari asisten lab sudah mudah dipahami, namun akan lebih baik jika disampaikan dengan tempo yang lebih perlahan agar semua praktikan, termasuk yang membutuhkan waktu lebih lama untuk memahami, dapat mengikuti dengan lebih baik. Terimakasih.
+Penjelasan materi dari asisten lab sudah mudah dipahami, namun akan
+lebih baik jika disampaikan dengan tempo yang lebih perlahan agar
+semua praktikan, termasuk yang membutuhkan waktu lebih lama untuk
+memahami, dapat mengikuti dengan lebih baik. Terimakasih.
