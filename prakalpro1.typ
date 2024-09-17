@@ -412,7 +412,10 @@ elif kom == 3:  # Komputer memilih Semut
 #table(
   columns: 2,
   [No. Baris], [Penjelasan],
-  [], [],
+  [3], [Kode `\033[37m` mengubah perilaku terminal dengan mengatur warna karakter setelahnya menjadi putih, dan kode `\033[0m` mengembalikan perilaku terminal ke semula],
+  [10], [Kode `\033[31m` mengatur warna karakter menjadi merah],
+  [26], [Kode `\033[34m` mengatur warna karakter menjadi biru],
+  [30], [Kode `\033[32m` mengatur warna karakter menjadi hijau],
 )
 
 == Penerjemah Protein
