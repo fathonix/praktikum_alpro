@@ -550,7 +550,36 @@ print("\033[37mTerima kasih telah berbelanja di Toko Grosir Arimbi!\033[0m")
 #table(
   columns: 2,
   [No. Baris], [Penjelasan],
-  [], [],
+  [1], [Impor modul `sys` untuk memanggil fungsi `sys.exit()`.],
+  [14], [Deklarasikan variabel `harga` untuk diubah dengan bilangan
+  bulat berupa harga barang yang dipilih.],
+  [14], [Variabel `diskon` untuk diubah dengan persenan diskon
+  yang berlaku.],
+  [17], [Cek apakah variabel `barang` bernilai bilangan bulat 1,
+  yaitu pengguna memilih barang pertama.],
+  [18], [Atur nilai variabel `harga` menjadi harga barang pertama.],
+  [19], [Cek apakah variabel `jumlah` bernilai di bawah bilangan
+  bulat 100, yakni jumlah yang dimasukkan pengguna
+  di bawah seratus.],
+  [20], [Atur nilai variabel `diskon` menjadi 0. Sebenarnya baris
+  kode ini adalah _boilerplate_, namun saya tambahkan saja agar
+  lebih mudah dipahami.],
+  [21], [Cek apakah variabel `jumlah` bernilai 100 atau lebih, dan
+  juga bernilai di bawah 200.],
+  [22], [Atur nilai variabel `diskon` menjadi 15.],
+  [21], [Cek apakah variabel `jumlah` bernilai 200 atau lebih, dan
+  juga bernilai di bawah atau sama dengan 300, yaitu stok barang
+  yang tersedia.],
+  [22], [Atur nilai variabel `diskon` menjadi 25.],
+  [26], [Jika tidak ada persamaan `if` dan `elif` atau kondisi yang
+  terpenuhi, cetak pesan akhir dan hentikan jalannya kode
+  menggunakan `sys.exit()`.],
+  [50], [Deklarasikan variabel `total_awal` yang mengambil nilai
+  dari $\h\a\r\g\a times \j\u\m\l\a\h$.],
+  [51], [$\t\o\t\a\l" "\d\i\s\k\o\n = \t\o\t\a\l" "\a\w\a\l times
+  (\d\i\s\k\o\n) / 100$.],
+  [52], [$\t\o\t\a\l" "\a\k\h\i\r = \t\o\t\a\l" "\a\w\a\l minus
+  \t\o\t\a\l" "\d\i\s\k\o\n$.],
 )
 
 = Kesimpulan
