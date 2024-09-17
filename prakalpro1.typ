@@ -457,14 +457,15 @@ if kodon == "UGG":
   columns: 2,
   [No. Baris], [Penjelasan],
   [1], [Tampilkan judul program ke dalam konsol],
-  [2], [mengambil kodon  dari pengguna yang dimasukkan ke dalam variable
-  yang dimasukkan kedalam input],
-  [4], [cek jika pengguna memasukkan kodon AUG],
+  [2], [mengambil kodon  dari pengguna yang dimasukkan ke dalam
+  variabel yang dimasukkan kedalam input],
+  [4], [Cek apakah pengguna memasukkan kodon AUG],
   [5], [jika kodon sesuai maka akan menampilkan Methionine],
-  [7], [Masukkan Kodon UUU atau UUC],
+  [7], [Cek apakah pengguna memasukkan kodon UUU atau UUC],
   [8], [Jika kodon sesuai maka akan menampilkan Phynylalanine],
-  [13], [Masukkan kodon UCU atau UCC atau UCA atau UCG],
-  [14], [jika kodon sesuai makan akan menampilkan SERINE],
+  [13], [Cek apakah pengguna memasukkan kodon UCU atau UCC atau UCA
+  atau UCG],
+  [14], [Jika kodon sesuai makan akan menampilkan SERINE],
 )
 
 == Login dan Register
