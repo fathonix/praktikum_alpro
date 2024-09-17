@@ -5,7 +5,7 @@ TYPST ?= typst
 GS ?= gs
 DOCNAME ?= prakalpro1
 COVFILE ?= frontcover.pdf
-OUTFILE ?= Praktikum\ Algoritme\ Pemrograman\ 1.pdf
+OUTFILE ?= LP\ 2\ &\ 3_Kelompok\ 4.pdf
 
 all: $(OUTFILE)
 
