@@ -157,6 +157,20 @@
   pengurangan, perkalian, pembagian dan lainnya. Berikut
   operator aritmatika yang dapat digunakan saat memprogram:
 
+  #table(
+    columns: 2,
+    [Simbol], [Penjelasan],
+    [+], [Penjumlahan],
+    [-], [Pengurangan],
+    [\*], [Perkalian],
+    [/], [Pembagian],
+    [\*\*], [Pangkat, misalnya $2^5$ ditulis `2 ** 5`],
+    [\/\/], [Pembagian bilangan bulat, jika hasil pembagian adalah
+    desimal maka dibulatkan ke nilai terkecil],
+    [%], [Modulus atau sisa pembagian, misalnya $6 mod 2$ bernilai 0,
+    ditulis `6 % 2`],
+  )
+
 + *Konversi Tipe Data*
 
   Konversi tipe data adalah operasi mengonversi data dari
@@ -298,6 +312,15 @@ print(fahrenheit)
 
 === Pembahasan
 
+#table(
+  columns: 2,
+  [No. Baris], [Penjelasan],
+  [3], [Ambil input pengguna dengan fungsi `input()`, ubah ke tipe data float dengan `float()` dan simpan pada variabel bernama `celsius`],
+  [4], [Ubah nilai variabel `celsius` ke Fahrenheit menggunakan rumus
+  dan simpan pada variabel `fahrenheit`],
+  [5], [Cetak nilai variabel `fahrenheit`],
+)
+
 == Penghitung Gaji Pegawai
 
 ```py
@@ -316,6 +339,17 @@ print("Total upah pekanan yang diterima:", upah_pekanan)
 #image("img/fig4.png")
 
 === Pembahasan
+
+#table(
+  columns: 2,
+  [No. Baris], [Penjelasan],
+  [1], [Ambil input pengguna dengan fungsi `input()`, ubah ke tipe data
+  bilangan bulat dengan `int()` dan simpan pada variabel bernama `upah`],
+  [2], [Buat variabel `jam_kerja` yang bernilai bilangan 8],
+  [3], [Ambil input pengguna dengan fungsi `input()`, ubah ke tipe data bilangan bulat dengan `int()` dan simpan pada variabel bernama `hari_kerja`],
+  [5], [Kalkulasikan upah pekanan pegawai dengan mengalikan nilai variabel `upah`, `jam_kerja` dan `hari_kerja`],
+  [6], [Cetak hasil kalkulasi upah pekanan],
+)
 
 == Permainan Suit/Pingsut dengan Gaya Konsol
 
@@ -375,6 +409,12 @@ elif kom == 3:  # Komputer memilih Semut
 
 === Pembahasan
 
+#table(
+  columns: 2,
+  [No. Baris], [Penjelasan],
+  [], [],
+)
+
 == Penerjemah Protein
 
 ```py
@@ -410,6 +450,20 @@ if kodon == "UGG":
 
 === Pembahasan
 
+#table(
+  columns: 2,
+  [No. Baris], [Penjelasan],
+  [1], [Tampilkan judul program ke dalam konsol],
+  [2], [mengambil kodon  dari pengguna yang dimasukkan ke dalam variable
+  yang dimasukkan kedalam input],
+  [4], [cek jika pengguna memasukkan kodon AUG],
+  [5], [jika kodon sesuai maka akan menampilkan Methionine],
+  [7], [Masukkan Kodon UUU atau UUC],
+  [8], [Jika kodon sesuai maka akan menampilkan Phynylalanine],
+  [13], [Masukkan kodon UCU atau UCC atau UCA atau UCG],
+  [14], [jika kodon sesuai makan akan menampilkan SERINE],
+)
+
 == Login dan Register
 
 ```py
@@ -418,6 +472,11 @@ if kodon == "UGG":
 == Screenshot
 
 == Pembahasan
+
+#table(
+  columns: 2,
+  [No. Baris], [Penjelasan],
+)
 
 = Kesimpulan
 
