@@ -78,6 +78,13 @@
   zebra-fill: none,
 )
 
+// Bibliography configurations
+#set bibliography(
+  title: "Daftar Isi",
+  style: "apa",
+  full: true,
+)
+
 // Text starts below
 
 = Dasar Teori
