@@ -456,3 +456,5 @@ Penjelasan materi dari asisten lab sudah mudah dipahami, namun akan
 lebih baik jika disampaikan dengan tempo yang lebih perlahan agar
 semua praktikan, termasuk yang membutuhkan waktu lebih lama untuk
 memahami, dapat mengikuti dengan lebih baik. Terimakasih.
+
+#bibliography("prakalpro1.bib")
