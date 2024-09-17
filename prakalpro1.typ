@@ -58,11 +58,16 @@
   font: "Times New Roman",
   size: 12pt,
 )
-// TODO: Make heading size larger dynamically
 #show heading: set text(
-  // size: 18pt,
+  size: 18pt,
   weight: "regular",
   fill: heading-color,
+)
+#show heading.where(level: 2): set text(
+  size: 16pt,
+)
+#show heading.where(level: 3): set text(
+  size: 14pt,
 )
 
 // Numbering formatting
