@@ -93,32 +93,190 @@
 
   Variabel adalah penamaan pada data yang akan disimpan pada
   komputer. Variabel juga dapat didefinisikan sebagai tempat
-  menyimpan data yang bersifat sementara. Variabel dapat diubah
-  atau dimanipulasi selama program dijalankan. Variabel dapat
-  membuat struktur kode lebih ringkas dan efisien.
-  Pemberian nama pada variabel bisa dimulai dengan huruf dan tidak
-  diawali dengan angka maupun spasi kosong.
+  menyimpan data yang bersifat sementara. Variabel dapat
+  diubah atau dimanipulasi selama program dijalankan.
+  Variabel dapat membuat struktur kode lebih ringkas dan
+  efisien. Pemberian nama pada variabel bisa dimulai dengan
+  huruf dan tidak diawali dengan angka maupun spasi kosong,
+  artinya nilainya bisa berubah-ubah. Variabel dalam python
+  memiliki format penulisan `nama_variabel =`. Variabel dapat
+  berisi teks maupun bilangan. Terdapat beberapa aturan
+  penulisan variabel, yaitu:
+
+  - Nama variabel boleh diawali menggunakan huruf atau garis
+    bawah (\_) dan tidak dapat dimulai dengan angka (0-9),
+    contoh: `namasaya`, `_nama`.
+  - karakter pada variabel bersifat sensitif, artinya huruf
+    kapital dan huruf kecil memiliki arti yang berbeda. 
+  - nama variabel tidak boleh menggunakan kata kunci yang
+    sudah ada dalam Python.
+
 
 + *I/O Konsol*
 
+  I/O Konsol adalah mekanisme yang memungkinkan program untuk
+  menerima input dari pengguna dan memberikan output kepada
+  pengguna melalui konsol atau terminal. Konsol atau terminal
+  adalah antarmuka berbasis teks yang sering digunakan untuk
+  menjalankan aplikasi, menguji kode, atau berinteraksi
+  dengan sistem operasi.
+
+  Input adalah data atau informasi yang dimasukkan ke dalam
+  sistem atau program dari sumber eksternal. Input ini bisa
+  berasal dari pengguna, file, atau sumber data lain.
+  
+  Contoh:
+
+  ```py
+  input("Masukkan umur: ")
+  ```
+
+  Output adalah data atau informasi yang dihasilkan oleh
+  sistem atau program dan disampaikan ke pengguna atau ke
+  sistem lain. Output ini bisa berupa hasil perhitungan,
+  pesan, atau data yang telah diproses.
+  
+  Contoh:
+
+  ```py
+  print("Memenuhi syarat")
+  ```
+
 + *Operasi Aritmatika*
 
-  Operasi aritmatika digunakan dalam proses perhitungan matematis
-  seperti penjumlahan, pengurangan, perkalian, pembagian dan
-  lainnya.
+  Operasi Aritmatika adalah operator yang digunakan untuk
+  melakukan operasi penjumlahan, pengurangan, pembagian, dan
+  perkalian atau operator yg berfungsi untuk melakukan
+  perhitungan pada bilangan. Operasi aritmatika digunakan
+  dalam proses perhitungan matematis seperti penjumlahan,
+  pengurangan, perkalian, pembagian dan lainnya. Berikut
+  operator aritmatika yang dapat digunakan saat memprogram:
 
 + *Konversi Tipe Data*
 
-  Konversi tipe data adalah 
+  Konversi tipe data adalah operasi mengonversi data dari
+  satu tipe data ke tipe data yang lainnya, misalnya dari
+  Number ke String, Number ke Boolean, dan lain sebagainya.
+  
+  Proses konversi dapat dilakukan secara otomatis (implisit)
+  maupun manual (eksplisit).
+  
+  Misalnya, ketika kita menulis bilangan pecahan 2.0,
+  interpreter JavaScript otomatis mengonversi ke bilangan
+  bulat menjadi 2.
+  
+  Untuk konversi manual, misalnya dari angka ke string
+  menggunakan fungsi String(), String(20) menghasilkan "20".
+  
+  Objek pembungkus nilai primitif seperti Number, String,
+  Boolean dan lainnya (tanpa kata kunci new), dapat digunakan
+  sebagai fungsi untuk mengonversi tipe data ke tipe terkait.
 
 + *Eksekusi Kondisional*
 
-  Eksekusi kondisional adalah suatu program yang dijalankan untuk
-  membantu pengambilan suatu keputusan pada kondisi tertentu.
+  Eksekusi kondisional adalah tempat kita mulai semacam
+  menambahkan lebih banyak kecerdasan. Pada eksekusi
+  kondisional ini kita dapat membuat pilihan, sesuai keadaan
+  atau kondisi dan juga dapat membuat komputer tampak cerdas
+  Dengan eksekusi kondisional, kita dapat menuliskan program
+  yang berguna melalui pengecekan kondisi suatu pernyataan.
+  Sehingga kita bisa membuat program kita lebih fleksibel.
+  Type data output dari eksekusi kondisional adalah Boolean,
+  Boolean merupakan suatu ekspresi yang mempunnyai nilai
+  `True` dan `False`. Sebagai contoh:
+	
+  ```py
+  x = 5 == 3
+  print(x) # output: false
+  print(type(x)) # output: <class 'bool'>
+  ```
+
+	Didalam eksekusi kondisional kita menggunakan perbandingan
+  untuk mendapatkan nilai Boolean nya, kita bisa menggunakan
+  beberapa operasi perbandingan ini:
+
+	- != (Tidak Sama Dengan)
+
+	- > (Lebih Besar Dari)
+
+	- >= (Lebih Besar Sama Dengan)
+
+	- < (Lebih Kecil Dari)
+
+	- <= (Lebih Kecil Sama Dengan)
+
+	- == (Sama Dengan)
+
+	- != (Tidak sama dengan)
+
+	If adalah pernyataan eksekusi konditional untuk menjalankan kode
+  ketika hasil dari persamaan benar atau salah.
+
+  Elif adalah pernyataan untuk kondisi selanjutnya setelah if jika if
+  bernilai false.
+
+	Else adalah kondisi terakhir jika if atau elif bernilai false.
+
+  Eksekusi kondisional merupakan suatu cara untuk memprogram
+  komputer agar mengambil langkah atau keputusan ketika
+  diberikan kondisi atau syarat tertentu. Contohnya jika
+  terdapat dua kode program dengan program pertama dapat
+  dijalankan jika suatu variabel tidak lebih dari pada nol
+  dan sebaliknya program kedua dapat dijalankan jika kondisi
+  pertama tidak terpenuhi. Jadi, Eksekusi kondisional adalah
+  tempat kita mulai semacam menambahkan lebih banyak
+  kecerdasan. Dengan eksekusi kondisional, kita dapat menulis
+  program yang berguna melalui pengecekan kondisi kapan suatu
+  pernyataan akan dijalankan yang tergantung dari masukkan
+  pengguna. Selain itu, kita dapat memberikan efek
+  fleksibilitas pada program yang akan kita buat. Suatu
+  pernyataan akan dijalankan ketika kondisi terpenuhi atau
+  ketika ekspresi boolean bernilai benar. Sebaliknya,
+  pernyataan tidak akan dieksekusi jika ekspresi bernilai
+  False. Ekspresi boolean merupakan suatu ekspresi yang
+  mengembalikan/memiliki suatu nilai boolean. Boolean sendiri
+  memiliki nilai berupa Benar atau Salah yang dalam Python
+  disebut dengan `True` atau `False`.
 
 + *Eksekusi Kondisional Bersarang*
 
+  Eksekusi kondisional bersarang merupakan eksekusi
+  kondisional yang dilakukan dalam eksekusi kondisional
+  lainnya. Ini berguna untuk membuat keputusan yang lebih
+  kompleks. Contoh kodenya pada Python adalah sebagai berikut:
+
+  ```py
+  umur = 15
+  tinggi = 180
+
+  if umur >= 17:
+      print("Umur memenuhi, silakan masuk")
+  else:
+      if tinggi >= 150:
+          print("Umur kurang tapi tinggi mencukupi, silakan masuk")
+      else:
+          print("Umur dan tinggi tidak mencukupi, dilarang masuk")
+  ```
+
 + *Eksekusi Kondisional Majemuk*
+
+  Eksekusi kondisional majemuk adalah suatu eksekusi kondisional
+  dengan beberapa pernyataan persamaan yang berantai, yaitu
+  menggunakan operator persamaan Boolean. Beberapa contoh operator persamaan Boolean adalah:
+
+  - `and` (persamaan AND) menghasilkan `True` apabila dua Boolean
+    sama-sama bernilai `True`.
+  - `or` (persamaan OR) menghasilkan `True` apabila salah satu
+    dari dua Boolean atau dua-duanya bernilai `True`.
+
+  Contohnya dalam kode adalah sebagai berikut:
+
+  ```py
+  print(True and True) # output: True
+  print(True and False) # output: False
+  print(True or True) # output: True
+  print(True or False) # output: True
+  ```
 
 = Source Code
 
