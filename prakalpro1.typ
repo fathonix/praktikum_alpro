@@ -166,12 +166,8 @@
   Proses konversi dapat dilakukan secara otomatis (implisit)
   maupun manual (eksplisit).
   
-  Misalnya, ketika kita menulis bilangan pecahan 2.0,
-  interpreter JavaScript otomatis mengonversi ke bilangan
-  bulat menjadi 2.
-  
   Untuk konversi manual, misalnya dari angka ke string
-  menggunakan fungsi String(), String(20) menghasilkan "20".
+  menggunakan fungsi `str()`, `str(20)` menghasilkan `"20"`.
   
   Objek pembungkus nilai primitif seperti Number, String,
   Boolean dan lainnya (tanpa kata kunci new), dapat digunakan
