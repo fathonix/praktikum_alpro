@@ -277,7 +277,8 @@
 
   Eksekusi kondisional majemuk adalah suatu eksekusi kondisional
   dengan beberapa pernyataan persamaan yang berantai, yaitu
-  menggunakan operator persamaan Boolean. Beberapa contoh operator persamaan Boolean adalah:
+  menggunakan operator persamaan Boolean. Beberapa contoh operator
+  persamaan Boolean adalah:
 
   - `and` (persamaan AND) menghasilkan `True` apabila dua Boolean
     sama-sama bernilai `True`.
@@ -315,9 +316,11 @@ print(fahrenheit)
 #table(
   columns: 2,
   [No. Baris], [Penjelasan],
-  [3], [Ambil input pengguna dengan fungsi `input()`, ubah ke tipe data float dengan `float()` dan simpan pada variabel bernama `celsius`],
-  [4], [Ubah nilai variabel `celsius` ke Fahrenheit menggunakan rumus
-  dan simpan pada variabel `fahrenheit`],
+  [3], [Ambil input pengguna dengan fungsi `input()`, ubah ke
+  tipe data float dengan `float()` dan simpan pada variabel
+  bernama `celsius`],
+  [4], [Ubah nilai variabel `celsius` ke Fahrenheit menggunakan
+  rumus dan simpan pada variabel `fahrenheit`],
   [5], [Cetak nilai variabel `fahrenheit`],
 )
 
@@ -346,8 +349,11 @@ print("Total upah pekanan yang diterima:", upah_pekanan)
   [1], [Ambil input pengguna dengan fungsi `input()`, ubah ke tipe data
   bilangan bulat dengan `int()` dan simpan pada variabel bernama `upah`],
   [2], [Buat variabel `jam_kerja` yang bernilai bilangan 8],
-  [3], [Ambil input pengguna dengan fungsi `input()`, ubah ke tipe data bilangan bulat dengan `int()` dan simpan pada variabel bernama `hari_kerja`],
-  [5], [Kalkulasikan upah pekanan pegawai dengan mengalikan nilai variabel `upah`, `jam_kerja` dan `hari_kerja`],
+  [3], [Ambil input pengguna dengan fungsi `input()`, ubah ke tipe data
+  bilangan bulat dengan `int()` dan simpan pada variabel bernama
+  `hari_kerja`],
+  [5], [Kalkulasikan upah pekanan pegawai dengan mengalikan nilai variabel
+  `upah`, `jam_kerja` dan `hari_kerja`],
   [6], [Cetak hasil kalkulasi upah pekanan],
 )
 
@@ -412,7 +418,9 @@ elif kom == 3:  # Komputer memilih Semut
 #table(
   columns: 2,
   [No. Baris], [Penjelasan],
-  [3], [Kode `\033[37m` mengubah perilaku terminal dengan mengatur warna karakter setelahnya menjadi putih, dan kode `\033[0m` mengembalikan perilaku terminal ke semula],
+  [3], [Kode `\033[37m` mengubah perilaku terminal dengan mengatur warna
+  karakter setelahnya menjadi putih, dan kode `\033[0m` mengembalikan
+  perilaku terminal ke semula],
   [10], [Kode `\033[31m` mengatur warna karakter menjadi merah],
   [26], [Kode `\033[34m` mengatur warna karakter menjadi biru],
   [30], [Kode `\033[32m` mengatur warna karakter menjadi hijau],
@@ -468,18 +476,81 @@ if kodon == "UGG":
   [14], [Jika kodon sesuai makan akan menampilkan SERINE],
 )
 
-== Login dan Register
+== Program Kasir Toko
 
 ```py
+import sys
+
+print("\033[37mSelamat datang di Toko Grosir Arimbi!\033[0m")
+print("\033[32mSetiap pembelian 100 pcs s/d di bawah 200 mendapatkan diskon 15%.\033[0m")
+print("\033[32mSetiap pembelian 200 pcs ke atas mendapatkan diskon 25%.\033[0m")
+print()
+print("Barang yang tersedia:")
+print("\033[37m1. Sembako: Rp80.000,-/pcs, tersedia 300 pcs\033[0m")
+print("\033[37m2. Aneka makanan ringan: Rp50.000,-/pcs, tersedia 500 pcs\033[0m")
+print("\033[37m3. Sabun dan deterjen: Rp30.000,-/pcs, tersedia 400 pcs\033[0m")
+
+barang = int(input("Masukkan nomor barang yang dipilih: "))
+jumlah = int(input("Masukkan jumlah barang yang diinginkan: "))
+harga = 0
+diskon = 0
+
+if barang == 1:
+    harga = 80000
+    if jumlah < 100:
+        diskon = 0
+    elif jumlah >= 100 and jumlah < 200:
+        diskon = 15
+    elif jumlah >= 200 and jumlah <= 300:
+        diskon = 25
+    else:
+        sys.exit("\033[31mStok barang tidak mencukupi!\033[0m")
+elif barang == 2:
+    harga = 50000
+    if jumlah < 100:
+        diskon = 0
+    elif jumlah >= 100 and jumlah < 200:
+        diskon = 15
+    elif jumlah >= 200 and jumlah <= 500:
+        diskon = 25
+    else:
+        sys.exit("\033[31mStok barang tidak mencukupi!\033[0m")
+elif barang == 3:
+    harga = 30000
+    if jumlah < 100:
+        diskon = 0
+    elif jumlah >= 100 and jumlah < 200:
+        diskon = 15
+    elif jumlah >= 200 and jumlah <= 400:
+        diskon = 25
+    else:
+        sys.exit("\033[31mStok barang tidak mencukupi!\033[0m")
+else:
+    sys.exit("\033[31mBarang yang dipilih tidak terdaftar!\033[0m")
+
+total_awal = harga * jumlah
+total_diskon = int(total_awal * (diskon / 100))
+total_akhir = total_awal - total_diskon
+
+print()
+print("Harga satuan:\033[37m", harga, "\033[0m")
+print("Harga jumlah:\033[37m", total_awal, "\033[0m")
+print("Diskon", diskon, "%:\033[31m", -total_diskon, "\033[0m")
+print("Biaya yang dibayarkan:\033[32m", total_akhir, "\033[0m")
+print("\033[37mTerima kasih telah berbelanja di Toko Grosir Arimbi!\033[0m")
 ```
 
 == Screenshot
+
+#image("img/fig9.png")
+#image("img/fig10.png")
 
 == Pembahasan
 
 #table(
   columns: 2,
   [No. Baris], [Penjelasan],
+  [], [],
 )
 
 = Kesimpulan
