@@ -7,6 +7,7 @@ The Typst layouting replicates the original .docx file layout provided by ITK.
 ## TODOs
 
 - Split template and contents into multiple files
+- Replicate the front cover in Typst
 
 ## License
 
