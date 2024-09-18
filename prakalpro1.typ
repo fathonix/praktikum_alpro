@@ -6,7 +6,6 @@
 #import "@preview/codly:1.0.0": *
 #show: codly-init.with()
 
-// TODO: Remove unused space under header
 #let def-margin = 2.54cm
 #let border-color = rgb("#1eaaf1")
 #let heading-color = rgb("#039be5")
@@ -15,8 +14,9 @@
   margin: (
     x: def-margin,
     bottom: def-margin,
-    top: 7cm,
+    top: 5.4cm,
   ),
+  header-ascent: 10%,
   header: context [
     #place(
       top,
