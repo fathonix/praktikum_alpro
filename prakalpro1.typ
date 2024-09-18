@@ -85,7 +85,7 @@
 
 // Bibliography configurations
 #set bibliography(
-  title: "Daftar Isi",
+  title: "Daftar Pustaka",
   style: "apa",
   full: true,
 )
@@ -621,4 +621,5 @@ lebih baik jika disampaikan dengan tempo yang lebih perlahan agar
 semua praktikan, termasuk yang membutuhkan waktu lebih lama untuk
 memahami, dapat mengikuti dengan lebih baik. Terimakasih.
 
+#pagebreak()
 #bibliography("prakalpro1.bib")
