@@ -3,7 +3,7 @@
 
 TYPST ?= typst
 GS ?= gs
-DOCNAME ?= prakalpro1
+DOCNAME ?= prakalpro
 COVFILE ?= frontcover.pdf
 OUTFILE ?= LP\ 2\ &\ 3_Kelompok\ 4.pdf
 
